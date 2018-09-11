@@ -1,9 +1,7 @@
 <template>
 	<div class="icons">
 	   <div class="icon" v-for="item of iconList" :key="item.id">
-	   	 <div class="icon-img">
-	 	   <img class="icon-img-content" :src="item.imgUrl">
-	 	 </div>
+	 	  <img class="icon-img-content" :src="item.imgUrl">
 	 	  <p class="icon-text">{{item.text}}</p>
 	   </div>
     </div>
@@ -48,33 +46,19 @@ export default{
 	display:flex;
 	flex-wrap:wrap;
    overflow:hidden;
-   padding-bottom:50.67%;
-   height:0;
+   height:3.5rem;
    .icon{
-   	  position:relative;
-   	  overflow:hidden;
    	  width:25%;
-   	  height:0;
-   	  padding-bottom:20%;
-   	  .icon-img{
-   	  	position:absolute;
-   	  	top:0;
-   	  	right:0;
-   	  	left:0;
-   	  	bottom:.44rem;
-   	  	.icon-img-content{
-   	  		height:100%;
-   	  		display:block;
-   	  		margin:0 auto;
-   	  	}
+   	  height:1.75rem;
+   	  .icon-img-content{
+   	  	width:1.2rem;
+   	  	height:1.2rem;
+   	  	display:block;
+   	  	margin:0 auto;
    	  }
    	  .icon-text{
-   	  	position:absolute;
-   	  	right:0;
-   	  	left:0;
-   	  	bottom:0;
-   	  	height:.44rem;
-   	  	line-height:.44rem;
+   	  	line-height:.14rem;
+   	  	height:.14rem;
    	  	text-align:center;
    	  }
    }
