@@ -38,7 +38,7 @@ export default{
 	}
 }
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .title{
 	width:100%;
 	height:.8rem;
@@ -62,12 +62,16 @@ export default{
        .detail-title{
        	 line-height:.50rem;
        	 font-size:.32rem;
-       	 ellipsis()
+         white-space:nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
        }
        .detail-desc{
           line-height: .4rem;
           color: #ccc;
-          ellipsis()
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
        }
        .btn{
        	  line-height: .44rem;
