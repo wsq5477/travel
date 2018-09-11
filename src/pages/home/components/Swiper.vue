@@ -57,7 +57,7 @@ export default{
    overflow:hidden;
    width:100%;
    height:0;
-   padding-bottom:37.5%;
+   padding-bottom:26.7%;
    .swiper-pagination-bullet-active{
    	 background:#eee;
    }
