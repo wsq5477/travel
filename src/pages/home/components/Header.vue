@@ -13,8 +13,11 @@
 	  </div>
 	</div>
 </template>
-<script type="text/javascript">
-
+<script>
+export default{
+	name:"HomeHeader",
+	
+}
 </script>
 <style lang="stylus" scoped>
     .header{
