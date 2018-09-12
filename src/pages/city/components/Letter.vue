@@ -20,8 +20,9 @@ export default{
     flex-direction:column;
     justify-content:center;
     position:absolute;
+    top:1.57rem;
     right:0;
-    height:100%;
+    bottom:0;
     width:.4rem;
     .letter{
       line-height:.4rem;
