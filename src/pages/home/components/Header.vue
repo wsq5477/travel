@@ -7,10 +7,12 @@
         <span class="iconfont">&#xe648;</span>
 	  	输入城市/景点/游玩主题
 	  </div>
+    <router-link to="/city">
 	  <div class="headerCity">
 	     {{this.city}}
 	  <span class="iconfont traingle">&#xe662;</span>
 	  </div>
+  </router-link>
 	</div>
 </template>
 <script>
@@ -54,6 +56,7 @@ export default{
        float:right;
        width:1.28rem;
        text-align:center;
+       color:#fff;
        .traingle{
        	  font-size:.2rem;
        }
