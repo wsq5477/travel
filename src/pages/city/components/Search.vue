@@ -3,7 +3,7 @@
   	  <input v-model="keyword" type="text" name="城市搜索" placeholder="输入城市名或名称" class="search-input">
       <div class="searchList" ref="search" v-show="keyword">
         <div>
-        <div class="searchItem border-bottom"  v-for="item of list" :key="item.id">{{item.name}}</div>
+        <div class="searchItem border-bottom"  v-for="item of list" :key="item.id"  @click="handleNowCity(item.name)">{{item.name}}</div>
         <div class="searchItem border-bottom" v-show="hasNoData">没有找到匹配数据</div>
         </div>
       </div>
@@ -55,6 +55,13 @@ export default{
            }
            this.list=result
        },100)
+    }
+  },
+  methods:{
+    handleNowCity(city)
+    {
+       this.$store.commit('changeCity',city)
+       this.$router.push('/')
     }
   }
 }

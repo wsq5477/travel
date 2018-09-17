@@ -16,12 +16,12 @@
 	</div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default{
-	name:"HomeHeader",
-  props:{
-    city:String
-  },
-  
+	name:"HomeHeader",  
+  computed:{
+    ...mapState(['city'])   
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -54,7 +54,8 @@ export default{
     }
     .headerCity{
        float:right;
-       width:1.28rem;
+       min-width:1.08rem;
+       padding:0 0.1rem; 
        text-align:center;
        color:#fff;
        .traingle{
